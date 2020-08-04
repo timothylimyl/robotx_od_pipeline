@@ -1,6 +1,7 @@
 # How to use the pipeline?
 
-#### Important note:
+## Important note:
+---
 
 I am assuming that 2D Object Detection Network selected is finalised. I have selected Single Shot Detector with MobileNet which can be used in real-time application.
 
@@ -21,9 +22,11 @@ Please download the folders over at [Google Drive]().
 
 The current data collected,labelled and train on can be found at `models/research/object_detection/images/train`.
 
-To date (2020), the RobotX team has not collected any quality images at prior competitions. Please attempt to collect more images with the boat on the water. It will be especially useful to gather lots of images from the competition itself if the organiser permits time for trial runs. You can then take all of these images, labelled them and retrain. Algorithm will work super well if the data collected is similar/exactly like the competition scene.
+To date (2020), the RobotX team has not collected any quality images at prior competitions and images of competition online is very limited (a quick google search will confirm this). Please attempt to collect more images with the boat on the water. It will be especially useful to gather lots of images from the competition itself if the organiser permits time for trial runs (I heard that there will be a free day). You can then take all of these images, labelled them and retrain. Algorithm will work super well if the data collected is similar/exactly like the competition scene.
 
 Add the training images that you have collected to the folder `object_detection/images/train`, testing images into `object_detection/images/train`.
+
+*In my case, since the amount of data was very limited, I generated fake data to compensate but it is still always the rule of thumb to collect data in real-world scenarios. Head over to [here]() if you are interested checking out what was generated and how it was generated*
 
 ## 2. Label the images
 
@@ -32,7 +35,10 @@ Follow this github instruction, [here](https://github.com/tzutalin/labelImg) to 
 The application will produce `*.xml` files for each of your labelled images. Before labelling, please rename the collect images according to 
 last/highest number in the folder (current:700) so you will need to rename your images from 701.jpg onwards (use `images/renaming.py` and edit accordingly to your path of new images). 
 
-*Note that the current labels are `totem`,`cruciform`,`circle`,`triangle` which are the current 4 object of interests. If there are more objects of interest needed to be added, there are quite a few changes that needs to be made, please read [this]().*
+*Note that the current labels are `totem`,`cruciform`,`circle`,`triangle` which are the current 4 object of interests. If there are more objects of interest needed to be added, there are quite a few changes that needs to be made:*
+
+a. Go to `object_detection/generate_tfrecord.py` and add more labels for new objects to `line 32`
+b. Go to `object_detection/training/pbtxt_generation.py` and add more labels for new objects. Run it to generate new `label_map.pbtxt`.
 
 Once you are done labelling, move all images and its labels(`*.xml`) into images/train to merge with the old labelled images. Next, convert all of the `*.xml` files to an excel spreadsheet. This can be done by running `xml_to_csv` (object_detection/images) which creates `train_labels.csv` and `test_labels.csv`. `*.xml` files has to be converted into TFRecords for Tensorflow to train the network. Go to `line 32 generate_tfrecord.py` and add the objects label.
 
