@@ -72,7 +72,7 @@ d) Change the number of steps in `num_steps` as u see fit.
 e) Change the number of examples according to the number of training examples (object_detection/images/train).
 
 
-6. Train and test.
+## 6. Train and test.
 
 I have set up an easy to use *.ipynb script that is suppose to work "out of the box". The reason why I set it up to be a *.ipynb script is so that you can use Colaboratory to train (free of charge cloud GPU offered by Google), roughly 12 hours of free runtime.
 
