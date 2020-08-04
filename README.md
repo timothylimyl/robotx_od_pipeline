@@ -1,7 +1,7 @@
 # How to use the pipeline?
 
 ## Important note:
----
+
 
 I am assuming that 2D Object Detection Network selected is finalised. I have selected Single Shot Detector with MobileNet which can be used in real-time application.
 
@@ -12,7 +12,7 @@ The instructions below will be assuming that the task of future members is to on
 2. Labelled the newly collect images.
 3. Retrain the network.
 
-Head over to `create_own_pipeline.md` for more info on how the whole thing is being set up.
+Head over to `create_pipeline.md` for more info on how the whole thing is being set up.
 
 
 ## 0. Download the pipeline.
