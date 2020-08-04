@@ -46,7 +46,7 @@ python generate_tfrecord.py --csv_input=images/test_labels.csv  --image_dir=imag
 
 ```
 
-## Retrain
+## 3. Retrain
 
 I have set up an easy to use *.ipynb script that is suppose to work "out of the box". The reason why I set it up to be a *.ipynb script is so that you can use Colaboratory to train (free of charge cloud GPU offered by Google), roughly 12 hours of free runtime.
 
