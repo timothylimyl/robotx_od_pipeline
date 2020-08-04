@@ -29,7 +29,12 @@ Add the training images that you have collected to the folder `object_detection/
 
 Follow this github instruction, [here](https://github.com/tzutalin/labelImg) to download the labelling application
 
-The application will produce `*.xml` files for each of your labelled images. Once you are done labelling, we will need to convert all of the `*.xml` files to an excel spreadsheet. This can be done by running `xml_to_csv` (object_detection/images) which creates `train_labels.csv` and `test_labels.csv`. `*.xml` files has to be converted into TFRecords for Tensorflow to train the network. Go to `line 32 generate_tfrecord.py` and add the objects label.
+The application will produce `*.xml` files for each of your labelled images. Before labelling, please rename the collect images according to 
+last/highest number in the folder (current:700) so you will need to rename your images from 701.jpg onwards (use `images/renaming.py` and edit accordingly to your path of new images). 
+
+*Note that the current labels are `totem`,`cruciform`,`circle`,`triangle` which are the current 4 object of interests. If there are more objects of interest needed to be added, there are quite a few changes that needs to be made, please read [this]().*
+
+Once you are done labelling, move all images and its labels(`*.xml`) into images/train to merge with the old labelled images. Next, convert all of the `*.xml` files to an excel spreadsheet. This can be done by running `xml_to_csv` (object_detection/images) which creates `train_labels.csv` and `test_labels.csv`. `*.xml` files has to be converted into TFRecords for Tensorflow to train the network. Go to `line 32 generate_tfrecord.py` and add the objects label.
 
 In terminal (Ensure u are in path: models/research/object_detection): 
 
