@@ -12,6 +12,8 @@ The instructions below will be assuming that the task of future members is to on
 2. Labelled the newly collect images.
 3. Retrain the network.
 
+Head over to `create_own_pipeline.md` for more info on how the whole thing is being set up.
+
 
 ## 0. Download the pipeline.
 
@@ -26,7 +28,7 @@ To date (2020), the RobotX team has not collected any quality images at prior co
 
 Add the training images that you have collected to the folder `object_detection/images/train`, testing images into `object_detection/images/train`.
 
-*In my case, since the amount of data was very limited, I generated fake data to compensate but it is still always the rule of thumb to collect data in real-world scenarios. Head over to [here]() if you are interested checking out what was generated and how it was generated*
+**In my case, since the amount of data was very limited, I generated fake data to compensate but it is still always the rule of thumb to collect data in real-world scenarios. Head over to [here]() if you are interested checking out what was generated and how it was generated**
 
 ## 2. Label the images
 
