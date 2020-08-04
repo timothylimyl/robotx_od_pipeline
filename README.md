@@ -1,10 +1,13 @@
-# robotx_od_pipeline
+# Creating 2D Object Detection Pipeline:
 
 ## 1. Selection of algorithm network
 
 This can be done by downloading a pre-trained network from [Tensorflow Model Zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf1_detection_zoo.md).After downloading the network file u want, untar/unzip.
 
 ## 2. Arrangement of folders
+
+Git clone [Tensorflow Object Detection API](https://github.com/tensorflow/models)
+The only important folder you need is `models`.
 
 Download models folder from my google drive.
 
@@ -76,17 +79,6 @@ Check out `inference.ipynb` to learn how to run the inference and check the infe
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-Dependencies:
+# Dependencies:
 
 Tensorflow 1.x, Python 3.7
