@@ -18,9 +18,9 @@ This location will be your main workspace.
 
 ## 3. Training and Testing Data
 
-In `object_detection/images/`, create an empty folder (I name it images). In images, create two folder (train,test) for training and testing images.
+In `models/research/object_detection/`, create an empty folder (I personally name it `images`). In `images`, create two folder (`train`,`test`) for training and testing images.
 
-Add the training images that you have collected to the folder (object_detection/images/train), testing images into test.
+Add the training images that you have collected to the folder (`object_detection/images/train`), testing images into `test`.
 
 ## 4. Label the images
 
@@ -34,7 +34,7 @@ and add the objects label.
 `xml_to_csv.py` and `generate_tfrecord.py` is written by a 3rd party, you can get it from the pipeline that I have shared with you and transfer the
 scripts according to the location I have specify.
 
-In terminal (Ensure u are in path: models/research/object_detection): 
+In terminal (Ensure u are in path: `models/research/object_detection`): 
 
 To create train data:
 
