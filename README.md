@@ -9,9 +9,7 @@ The instructions below will be assuming that the task of future members is to on
 2. Labelled the newly collect images.
 3. Retrain the network.
 
-Edit 1: Head over to `create_pipeline.md` for more info on how the whole thing is being set up.
-
-**Edit 2 (As of 08/2020): TF2 is made available for the Object Detection API. TF2 provides with more selection of network models. If future members decides to shift to TF2, I recommend following this [TUTORIAL](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/index.html), please do read through what I have set up too as it will give u a better idea on the overall picture and the set up is 90% similar.**
+Head over to `create_pipeline.md` for more info on how the whole thing is being set up.
 
 ## 0. Download the pipeline.
 
@@ -71,3 +69,5 @@ Check out `inference.ipynb` to learn how to run the inference and check the infe
 # Dependencies:
 
 Tensorflow 1.x, Python 3.7
+
+**Edit (As of 08/2020): TF2 is made available for the Object Detection API. TF2 provides with more selection of network models. If future members decides to shift to TF2, I recommend following this [TUTORIAL](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/index.html), please do read through what I have set up too as it will give u a better idea on the overall picture and the set up is 90% similar.**
