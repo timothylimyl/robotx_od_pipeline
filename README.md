@@ -2,7 +2,7 @@
 
 ## Important note:
 
-The instructions below will be assuming that the task of future members is to only:
+The instructions below will be assuming that the task of future members is to:
 
 0. Download the pipeline that was set up.
 1. Collect more quality training and testing images.
