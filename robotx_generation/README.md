@@ -15,8 +15,7 @@ Get background images from google and stored in the folder `background`.
 
 #### c. Generating RobotX Shapes on random background
 
-`data_generation_robotx_shapes.py` generates shapes with white background such as those commonly given in the RobotX competition task. I crop out the shapes from competition images and stored them in the folder `robotx_shape`. In `robotx_shape`, I cropped out 4 shapes from RobotX Competition images but I use the script `robotx_shape/generate_different_color.py` to provide me with the same shape but different color. These shapes are all used in 
-`data_generation_robotx_shapes.py`
+`data_generation_robotx_shapes.py` generates shapes with white background such as those commonly given in the RobotX competition task. I crop out the shapes from competition images and stored them in the folder `robotx_shape`. In `robotx_shape`, I cropped out 4 shapes from RobotX Competition images. I use the script `robotx_shape/generate_different_color.py` to provide me with the more of the same shape with different color. These shapes are all used in  `data_generation_robotx_shapes.py`
 
 #### d. Visualise generated images
 
