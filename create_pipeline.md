@@ -24,15 +24,14 @@ Add the training images that you have collected to the folder (`object_detection
 
 ## 4. Label the images
 
-Follow this github instructio [here](https://github.com/tzutalin/labelImg) to download the labelling application.
+Follow this github instruction [here](https://github.com/tzutalin/labelImg) to download the labelling application.
 
 The application will produce `*.xml` files for each of your labelled images. Once you are done labelling, we will need to convert all of 
 the `*.xml` files to an excel spreadsheet. This can be done by running `xml_to_csv.py` (object_detection/images) which creates `train_labels.csv` 
 and `test_labels.csv`. `*.xml` files has to be converted into TFRecords for Tensorflow to train the network.Go to `line 32 generate_tfrecord.py`
 and add the objects label.
 
-`xml_to_csv.py` and `generate_tfrecord.py` is written by a 3rd party, you can get it from the pipeline that I have shared with you and transfer the
-scripts according to the location I have specify.
+`xml_to_csv.py` and `generate_tfrecord.py` is written by a 3rd party, you can get it from the pipeline that I have shared with you and transfer the scripts according to the location I have specify.
 
 In terminal (Ensure u are in path: `models/research/object_detection`): 
 
@@ -76,15 +75,12 @@ e) Change the number of examples according to the number of training examples (o
 
 I have set up an easy to use *.ipynb script that is suppose to work "out of the box". The reason why I set it up to be a *.ipynb script is so that you can use Colaboratory to train (free of charge cloud GPU offered by Google), roughly 12 hours of free runtime.
 
-Run `training_custom_object_detection.ipynb` to train. The notebook will export the newly train frozen graph containing the entire neural network model with all of its parameters. To run the inference, all you will need is the frozen trained model with the ssd model folder and the label_map.pbtxt. 
-
-Check out `inference.ipynb` to learn how to run the inference and check the inference speed. This will be the "final" script to be run in real-time for the embedded hardware with the camera.
-
-**last step: need more research into how to use opencv to parse images in real-time and throw into the network.
+Run `training_custom_object_detection.ipynb` to train. The notebook will export the newly train frozen graph containing the entire neural network model with all of its parameters. To run the inference, all you will need is the frozen trained model with the ssd model folder and the label_map.pbtxt. Check out `inference.ipynb` to learn how to run the inference and check the inference speed.
 
 
 
 # Dependencies:
-*Important note: Pipeline was created before TF2 was released for the API. * 
+
+**Important note: Pipeline was created before TF2 was released for the API. I recommend spending 5-15 hours trying to set up ** 
 
 Tensorflow 1.x, Python 3.7.
