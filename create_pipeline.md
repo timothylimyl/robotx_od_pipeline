@@ -81,6 +81,6 @@ Run `training_custom_object_detection.ipynb` to train. The notebook will export 
 
 # Dependencies:
 
-**Important note: Pipeline was created before TF2 was released for the API. I recommend spending 5-15 hours trying to set up ** 
+**Important note: Pipeline was created before TF2 was released for the API. I recommend spending 5-15 hours trying to set up following this [guide](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/training.html). Refer back to my instructions as a reference, it is basically 90% the same for TF1 and TF2.** 
 
 Tensorflow 1.x, Python 3.7.
