@@ -71,6 +71,14 @@ Run `inference.ipynb` to learn how to run the inference and check the inference 
 
 This will be the "final" script to be run in before testing it with the embedded hardware with the camera.
 
+## Sample result
+
+Sample result:
+Good            |  Average   | Poor
+:-------------------------:|:-------------------------:|:-------------------------:
+![1](saved_images/save7.jpg)   | ![2](saved_images/save2.jpg) | ![3](saved_images/save8.jpg)
+
+
 
 # Dependencies:
 
