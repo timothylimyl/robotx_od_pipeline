@@ -76,7 +76,7 @@ This will be the "final" script to be run in before testing it with the embedded
 Sample result:
 Good            |  Average   | Poor
 :-------------------------:|:-------------------------:|:-------------------------:
-![1](saved_images/save7.jpg)   | ![2](saved_images/save2.jpg) | ![3](saved_images/save8.jpg)
+![1](saved_images/save7.jpg)   | ![2](saved_images/save4.jpg) | ![3](saved_images/save8.jpg)
 
 
 
