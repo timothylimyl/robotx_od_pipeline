@@ -31,7 +31,7 @@ All of the generated images are transfer to the `train` folder in the 2D Object 
 
 #### a. Generating images that are unseen by the training process.
 
-The folder of images can be found in `test_set_uncertainty` which consist of 40 images, each image contains 3 objects of interest.
+The folder of images can be found in `2DOD_Pipeline/use_for_inference/test_set_uncertainty` which consist of 40 images, each image contains 3 objects of interest. 
 
 #### b. Get data on ground truth 
 
