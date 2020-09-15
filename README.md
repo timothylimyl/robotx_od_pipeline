@@ -86,4 +86,4 @@ Good            |  Average   | Poor
 
 Tensorflow 1.x, Python 3.7
 
-**Edit (As of 08/2020): TF2 is made available for the Object Detection API. TF2 provides with more selection of network models. If future members decides to shift to TF2, I recommend following this [TUTORIAL](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/index.html), please do read through what I have set up too as it will give u a better idea on the overall picture and the set up is 90% similar.**
+**Edit (As of 08/2020): TF2 is made available for the Object Detection API. TF2 provides with more selection of network models. If future members decides to shift to TF2, I recommend following this [TUTORIAL](https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/index.html), please do read through what I have set up too as it will give u a better idea on the overall picture and the set up is 90% similar over at `create_pipeline.md`.**
