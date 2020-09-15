@@ -1,7 +1,6 @@
-
-# Generation of RobotX Data (Images) + Uncertainty Testing
-
 Go over to my google drive for the [full folder](https://drive.google.com/drive/folders/170pHSGsm8GWRfVX1TI-WNVOIN56qY-HT?usp=sharing).
+
+**Recommendation: Please download the folders locally and try everything for yourself.**
 
 # Data Generation Setup:
 
@@ -59,14 +58,11 @@ By running `uncertainty_characterisation.py`, the script will do a few things fo
    
    4. It computes the mean and standard deviation of the error in x and y-axis of the image, and plots a histogram of the error distribution as seen in the Figure below.
    
- ![im2](uncertainty_code_output.jpg)
+ ![im2](uncertainty_code_output.JPG)
  
  
  
- 
- 
- ## Recommendation:
- Please download the folders locally and try everything for yourself.
+
 
 
 
