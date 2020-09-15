@@ -1,9 +1,9 @@
 
-# Generation of RobotX Data (Images)
+# Generation of RobotX Data (Images) + Uncertainty Testing
 
 Go over to my google drive for the [full folder](https://drive.google.com/drive/folders/170pHSGsm8GWRfVX1TI-WNVOIN56qY-HT?usp=sharing).
 
-## Setup:
+## Data Generation Setup:
 
 #### a. Collecting background images
 
@@ -24,6 +24,29 @@ The script `visualisation.py` was used to produce a compilation of generated ima
 ![im](generated_image.jpg)
 
 
-## Final note
+#### e. Final note
 
-All of the generated images are transfer to the `train` folder in the 2D Object Detection Pipeline and labelled.
+All of the generated images are transfer to the `train` folder in the 2D Object Detection Pipeline and labelled for training.
+
+## Characterising Uncertainty:
+
+#### a. Generating images that are unseen by the training process.
+
+The folder of images can be found in `test_set_uncertainty` which consist of 40 images, each image contains 3 objects of interest.
+
+#### b. Get data on ground truth 
+
+We will need to compare the Ground Truth coordinates of the midpoint of the bounding box versus the coordinates of the predicted. Ground truth coordinates is taken from labelling using `labelImg` and the coordinates information is stored in the folder `test_uncertainty_gt` as `.xml` files. All the ground truth information in `.xml` files are converted to a single `.csv` file using `xml_to_csv.py`.
+
+#### c. Get data on predictions (Inference on trained model)
+
+The model predictions was taken from the [2DOD Pipeline](https://github.com/timothylimyl/robotx_od_pipeline). In the google drive of the pipeline, there is a folder `use_for_inference` which consist of image folders for inference. By running inference through all images from `2DOD_Pipeline/use_for_inference/test_set_uncertainty` by running the script `2DOD_Pipeline/inference_uncertainty.ipynb`, we compiled the bounding box predictions into a `.csv` file `2DOD_Pipeline/use_for_inference/coordinate_predictions.csv`.
+
+**Please read through the inference script `inference_uncertainty.ipynb`, there are written comments there that will help you understand what is the script doing.**
+
+
+#### d. Computation of error
+
+Now that we have the ground truth and predictions of bounding box position, a script was written to parse the data (`uncertainty_characterisation.py`)
+
+
