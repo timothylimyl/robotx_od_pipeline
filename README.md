@@ -22,7 +22,7 @@ The current data collected,labelled and trained on can be found at `models/resea
 
 To date (2020), the RobotX team has not collected any quality images at prior competitions and images of competition online is very limited (a quick google search will confirm this). Please attempt to collect more images with the boat on the water. It will be especially useful to gather lots of images from the competition itself if the organiser permits time for trial runs (I heard that there will be a free day). You can then take all of these images, labelled them and retrain. Algorithm will work super well if the data collected is similar/exactly like the competition scene.
 
-Add the training images that you have collected to the folder `object_detection/images/train`, testing images into `object_detection/images/train`.
+Add the training images that you have collected to the folder `object_detection/images/train`, testing images into `object_detection/images/test`.
 
 **In my case, since the amount of data was very limited, I generated fake data to compensate but it is still always the rule of thumb to collect data in real-world scenarios. Head over to [here](https://github.com/timothylimyl/robotx_od_pipeline/tree/master/robotx_generation) if you are interested checking out what was generated and how it was generated**
 
