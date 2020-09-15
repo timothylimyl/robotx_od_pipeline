@@ -1,10 +1,10 @@
-All the folders and files necessary at over at the same location of [google drive](https://drive.google.com/drive/folders/170pHSGsm8GWRfVX1TI-WNVOIN56qY-HT) as data generation.
+All the folders and files necessary are over at the same [google drive](https://drive.google.com/drive/folders/170pHSGsm8GWRfVX1TI-WNVOIN56qY-HT) location as data generation.
 
 # Characterising Uncertainty:
 
 #### a. Generating images that are unseen by the training process.
 
-The folder of images can be found in `2DOD_Pipeline/use_for_inference/test_set_uncertainty` which consist of 40 images, each image contains 3 objects of interest. For more information of how images are generated, go to the `robotx_generation` [folder](https://github.com/timothylimyl/robotx_od_pipeline/tree/master/robotx_generation).
+The folder of images can be found in `2DOD_Pipeline/use_for_inference/test_set_uncertainty` which consist of 40 images, each image contains 3 objects of interest. For more information of how images are generated, go to the `robotx_od_pipeline/robotx_generation` [folder](https://github.com/timothylimyl/robotx_od_pipeline/tree/master/robotx_generation) in this repo.
 
 #### b. Get data on ground truth 
 
