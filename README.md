@@ -28,7 +28,7 @@ Add the training images that you have collected to the folder `object_detection/
 
 ## 2. Label the images
 
-Follow this github instruction, [here](https://github.com/tzutalin/labelImg) to download the labelling application. Please read how does the annotation tool work, it is very simple.
+The labelImg folder contains the labelling application. Please read how does the annotation tool work over at the [official repo](https://github.com/tzutalin/labelImg), it is very simple.
 
 The application will produce `*.xml` files for each of your labelled images. Before labelling, please rename the collect images according to 
 last/highest number in the folder (current:700) so you will need to rename your images from 701.jpg onwards (use `images/renaming.py` and edit accordingly to your path of new images). 
@@ -63,6 +63,8 @@ python generate_tfrecord.py --csv_input=images/test_labels.csv  --image_dir=imag
 I have set up an easy to use *.ipynb script that is suppose to work "out of the box". The reason why I set it up to be a *.ipynb script is so that you can use Colaboratory to train (free of charge cloud GPU offered by Google), roughly 12 hours of free runtime on a Tesla K80.
 
 Save the whole folder into your google drive. Run `training_custom_object_detection.ipynb` to train. The notebook will export the newly train frozen graph containing the entire neural network model with all of its parameters once training is done. To run the inference, all you will need is the frozen trained model and the label_map.pbtxt. 
+
+*Please read through the notebook script before running to get an understanding of what u are running first*
 
 
 ## 4. Run inference
