@@ -3,7 +3,7 @@
 
 Go over to my google drive for the [full folder](https://drive.google.com/drive/folders/170pHSGsm8GWRfVX1TI-WNVOIN56qY-HT?usp=sharing).
 
-## Data Generation Setup:
+# Data Generation Setup:
 
 #### a. Collecting background images
 
@@ -28,7 +28,7 @@ The script `visualisation.py` was used to produce a compilation of generated ima
 
 All of the generated images are transfer to the `train` folder in the 2D Object Detection Pipeline and labelled for training.
 
-## Characterising Uncertainty:
+# Characterising Uncertainty:
 
 #### a. Generating images that are unseen by the training process.
 
@@ -47,6 +47,26 @@ The model predictions was taken from the [2DOD Pipeline](https://github.com/timo
 
 #### d. Computation of error
 
-Now that we have the ground truth and predictions of bounding box position, a script was written to parse the data (`uncertainty_characterisation.py`)
+Now that we have the ground truth and predictions of bounding box position, a script was written to parse the data (`uncertainty/uncertainty_characterisation.py`).  We move the `.csv` files of the ground truth and prediction into the folder `uncertainty`.
+
+By running `uncertainty_characterisation.py`, the script will do a few things for us:
+
+   1. It will properly set up the ground truth bounding box positions to match the bounding box predicted. The ground truth `.csv` has a few issues that we need to deal with first. We need to sort the images in ascending order according to the filename, then we will need to sort it in ascending order according to the minimum x-coordinate value (`xmin`) within the same image to ensure that bounding box coordinates are in the order from left of the image to the right.
+   
+   2. It finds the midpoint each bounding box.
+   
+   3. It compares the midpoint of the ground truth label to that of the model prediction.
+   
+   4. It computes the mean and standard deviation of the error in x and y-axis of the image, and plots a histogram of the error distribution as seen in the Figure below.
+   
+ ![im2](uncertainty_code_output.jpg)
+ 
+ 
+ 
+ 
+ 
+ ## Recommendation:
+ Please download the folders locally and try everything for yourself.
+
 
 
