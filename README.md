@@ -1,4 +1,4 @@
-# Quick Repository Guide:
+## Quick Repository Guide:
 
 There are only **2 main google drive folders** that you are required to download to run everything mentioned within this repository. One is 2DOD_Pipeline as shared in this readme and another is robotx_data which is shared in both robotx_generation and robotx_uncertainty (same folder, only require one download). 
 
