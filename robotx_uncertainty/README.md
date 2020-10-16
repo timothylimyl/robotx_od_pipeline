@@ -12,7 +12,7 @@ We will need to compare the Ground Truth coordinates of the midpoint of the boun
 
 #### c. Get data on predictions (Inference on trained model)
 
-The model predictions was taken from the [2DOD Pipeline](https://github.com/timothylimyl/robotx_od_pipeline). In the google drive of the pipeline, there is a folder `use_for_inference` which consist of image folders for inference. By running inference through all images from `2DOD_Pipeline/use_for_inference/test_set_uncertainty` by running the script `2DOD_Pipeline/inference_uncertainty.ipynb`, we compiled the bounding box predictions into a `.csv` file `2DOD_Pipeline/use_for_inference/coordinate_predictions.csv`.
+The model predictions was calculated using the notebook `inference_uncertainty.ipynb` from the same google drive in [2DOD Pipeline Drive](https://drive.google.com/drive/u/1/folders/1669iQFZg1kmxT-e_k6j4973mFD11Sb7v). In the google drive of the pipeline, there is a folder `use_for_inference` which consist of image folders for inference. By running inference through all images from `2DOD_Pipeline/use_for_inference/test_set_uncertainty` by running the script `2DOD_Pipeline/inference_uncertainty.ipynb`, we compiled the bounding box predictions into a `.csv` file `2DOD_Pipeline/use_for_inference/coordinate_predictions.csv`.
 
 **Please read through the inference script `inference_uncertainty.ipynb`, there are written comments there that will help you understand what is the script doing.**
 
