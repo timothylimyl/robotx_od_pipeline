@@ -8,7 +8,7 @@ Go over to my google drive for the [full folder](https://drive.google.com/drive/
 
 Get background images from google and stored in the folder `background`.
 
-#### b. nerating shapes on random background
+#### b. Generating shapes on random background
 
 `data_generation_shapes.py` generates shapes of random size on the background images provided. The generated images are stored in the folder `generated`.
 
